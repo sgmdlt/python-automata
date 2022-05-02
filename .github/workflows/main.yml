@@ -21,11 +21,8 @@ jobs:
     - name: Install dependencies
       run: |
           pip install poetry
-          poetry add wemake-python-styleguide
           make install
-    - name: Run Test
-      run: |
-          make test
-    - name: wemake-python-styleguide
-      uses: wemake-services/wemake-python-styleguide@0.15.3
-    
+    - name: tests
+      run: make test
+    - name: linter
+      run: make lint
