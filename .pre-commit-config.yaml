@@ -1,0 +1,5 @@
+repos:
+-   repo: ../hooks
+    rev: f3233ab8b3fcc54a0273006869a7010398ecb8cc
+    hooks:
+    -   id: make-check
